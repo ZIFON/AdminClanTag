@@ -4,7 +4,7 @@
 
 
 ConVar admin;
-ConVar root;
+ConVar adminroot;
 char tag[128];
 
 public Plugin myinfo =
@@ -21,7 +21,7 @@ public OnPluginStart()
 	RegAdminCmd("sm_tag", Tag, ADMFLAG_GENERIC);
 	HookEvent("player_team", Team); 
 	admin = CreateConVar("admin_clan_tag","[ADMIN]");
-	root = CreateConVar("root_admin_tag","[CREATOR]");
+	adminroot = CreateConVar("root_admin_tag","[CREATOR]");
 	AutoExecConfig(true, "AdminClanTag");
 } 
 static const char BORDER[] = "{LIME}--------------------------------------------------";
@@ -32,7 +32,7 @@ public void Team(Event hEvent, char[] name, bool dontBroadcast)
 
 	if(GetUserFlagBits(iClient) & ADMFLAG_ROOT)
 	{
-		GetConVarString(root, tag, sizeof(tag));
+		GetConVarString(adminroot, tag, sizeof(tag));
 	}
 	if (GetUserFlagBits(iClient) & ADMFLAG_GENERIC)
 	{
