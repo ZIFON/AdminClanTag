@@ -10,7 +10,7 @@ char tag[128];
 public Plugin myinfo =
 {
 	name =  "AdminClanTag" ,
-	author =  "ZIFON & Domikuss" ,
+	author =  "ZIFON " ,
 	description =  "https://github.com/ZIFON" ,
 	version =  "1.0" ,
 	url =  "https://github.com/ZIFON"
