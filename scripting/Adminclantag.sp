@@ -12,7 +12,7 @@ public Plugin myinfo =
 	name =  "AdminClanTag" ,
 	author =  "ZIFON " ,
 	description =  "https://github.com/ZIFON" ,
-	version =  "1.0" ,
+	version =  "2.0" ,
 	url =  "https://github.com/ZIFON"
 };
 
